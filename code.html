@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fantasia Kids - Decoração e Cenografia para Festas Infantis</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #fef6f6;
+            color: #333;
+        }
+        
+        .hero-gradient {
+            background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 100%);
+        }
+        
+        .btn-primary {
+            background: linear-gradient(135deg, #ff758c 0%, #ff7eb3 100%);
+            transition: all 0.3s ease;
+        }
+        
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(255, 117, 140, 0.3);
+        }
+        
+        .theme-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        }
+        
+        .custom-shape-divider-bottom-1706803969 {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            overflow: hidden;
+            line-height: 0;
+        }
+
+        .custom-shape-divider-bottom-1706803969 svg {
+            position: relative;
+            display: block;
+            width: calc(100% + 1.3px);
+            height: 150px;
+        }
+
+        .custom-shape-divider-bottom-1706803969 .shape-fill {
+            fill: #FFFFFF;
+        }
+        
+        .animate-float {
+            animation: float 6s ease-in-out infinite;
+        }
+        
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+            100% { transform: translateY(0px); }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header/Navigation -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center">
+                    <img src="https://placehold.co/50x50" alt="Logo Fantasia Kids - balões coloridos formando um arco-íris" class="h-12">
+                    <span class="ml-3 text-xl font-bold text-pink-600">Fantasia Kids</span>
+                </div>
+                <nav class="hidden md:block">
+                    <ul class="flex space-x-8">
+                        <li><a href="#home" class="text-pink-600 hover:text-pink-800 font-medium">Home</a></li>
+                        <li><a href="#servicos" class="text-gray-600 hover:text-pink-600 font-medium">Serviços</a></li>
+                        <li><a href="#pegue-monte" class="text-gray-600 hover:text-pink-600 font-medium">Pegue e Monte</a></li>
+                        <li><a href="#cenografia" class="text-gray-600 hover:text-pink-600 font-medium">Cenografia</a></li>
+                        <li><a href="#portfolio" class="text-gray-600 hover:text-pink-600 font-medium">Portfólio</a></li>
+                        <li><a href="#contato" class="text-gray-600 hover:text-pink-600 font-medium">Contato</a></li>
+                    </ul>
+                </nav>
+                <button class="md:hidden focus:outline-none">
+                    <svg class="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-gradient relative py-20 md:py-32 overflow-hidden">
+        <div class="container mx-auto px-6 flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-12 md:mb-0">
+                <h1 class="text-4xl md:text-5xl font-bold text-white mb-6">Transforme sua festa em um conto de fadas!</h1>
+                <p class="text-white text-lg mb-8">Decoração profissional, cenografia encantadora e kits personalizados para criar momentos inesquecíveis.</p>
+                <div class="flex flex-wrap gap-4">
+                    <a href="#pegue-monte" class="btn-primary text-white px-8 py-3 rounded-full font-bold">Monte sua Festa</a>
+                    <a href="#contato" class="bg-white text-pink-600 px-8 py-3 rounded-full font-bold hover:bg-gray-100 transition">Fale Conosco</a>
+                </div>
+            </div>
+            <div class="md:w-1/2 relative">
+                <img src="https://placehold.co/600x400" alt="Mesas de festa infantil decoradas com balões, doces e tema de unicórnio em tons pastéis" class="rounded-lg shadow-xl animate-float">
+                <div class="absolute -bottom-6 -left-6 w-32 h-32 bg-yellow-300 rounded-full opacity-20"></div>
+                <div class="absolute -top-6 -right-6 w-40 h-40 bg-pink-300 rounded-full opacity-20"></div>
+            </div>
+        </div>
+        <div class="custom-shape-divider-bottom-1706803969">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,202.35,16.7C872.75,71.9,906.1,55.91,935.5,36.1,971.69,9.62,1008.8,3.5,1043.4,5.3c87.81,5.3,170.6,43.48,234.3,102.9,66.1,62.8,123.5,147.7,144.4,223.5,17.9,65.4,12.7,138.1-5.6,199.2-1.1,3.6-3.4,7.6-7.6,9.9-6.2,3.4-12.8,4.2-19.2,2.7-23.1-5.6-47.1-16.2-70.5-25.1-48.8-18.7-98.1-40.5-143.4-60.4-24.7-10.9-42.8-37.3-50.1-57.7-7.8-21.4-5.2-44.5,5.5-62.7,21.9-38.2,77.4-59.8,123.7-61.1,67.8-1.8,128.8,32.7,158.8,85.9,28.1,50.1,25.4,106.4-14.9,150.8-1,1.1-2.2,2.2-3.3,3.4-14.5,14.7-32.2,28.1-52.7,29.8-46.7,3.9-84.3-30.2-117.1-62.5-28.1-27.7-52.5-60.1-77.7-86.7-26.1-27.4-51.4-56.4-80.1-78.9-29.7-23.5-60.4-42.4-95.3-49.9-30.1-6.5-62.1-1.3-91.2,7.7-16.1,5-31.4,12.1-45.6,20.8-29.8,18.5-57.2,45.1-73.1,74.1-20.6,37.8-28.3,80.6-17.6,121.6,5.7,22.1,17.9,42.8,32.1,59.2,20.2,23.4,47.5,41.4,76.5,45.5,62.7,8.9,122.2-22.1,159.9-64.1,17.4-19.4,31.3-42.1,43.1-64.4,11.6-22,19.4-45.5,23.1-69.5,1.6-10.6,2.2-21.4,2.2-32.2C1114.1,55.2,1080.1,14.1,1043.4,5.3Z" class="shape-fill"></path>
+            </svg>
+        </div>
+    </section>
+
+    <!-- Serviços Section -->
+    <section id="servicos" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Nossos Serviços Especiais</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Tudo o que você precisa para uma festa perfeita em um só lugar</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Serviço 1 -->
+                <div class="bg-white p-8 rounded-xl shadow-lg text-center hover:shadow-xl transition">
+                    <div class="bg-pink-100 w-20 h-20 mx-auto rounded-full flex items-center justify-center mb-6">
+                        <img src="https://placehold.co/40x40" alt="Ícone de balões coloridos" class="w-10 h-10">
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">Decoração Completa</h3>
+                    <p class="text-gray-600">Desde pequenos detalhes até a transformação total do espaço, criamos ambientes mágicos para sua festa.</p>
+                </div>
+                
+                <!-- Serviço 2 -->
+                <div class="bg-white p-8 rounded-xl shadow-lg text-center hover:shadow-xl transition">
+                    <div class="bg-blue-100 w-20 h-20 mx-auto rounded-full flex items-center justify-center mb-6">
+                        <img src="https://placehold.co/40x40" alt="Ícone de kit de montagem" class="w-10 h-10">
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">Pegue e Monte</h3>
+                    <p class="text-gray-600">Kits completos com tudo o que você precisa para montar sua própria decoração com facilidade e estilo.</p>
+                </div>
+                
+                <!-- Serviço 3 -->
+                <div class="bg-white p-8 rounded-xl shadow-lg text-center hover:shadow-xl transition">
+                    <div class="bg-purple-100 w-20 h-20 mx-auto rounded-full flex items-center justify-center mb-6">
+                        <img src="https://placehold.co/40x40" alt="Ícone de teatro com cortinas" class="w-10 h-10">
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">Cenografia Profissional</h3>
+                    <p class="text-gray-600">Criação de cenários temáticos completos que transportam seus convidados para um mundo de fantasia.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pegue e Monte Section -->
+    <section id="pegue-monte" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Pegue e Monte</h2>
+                <p class="text-gray-600 max-w-
